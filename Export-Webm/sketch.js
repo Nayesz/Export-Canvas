@@ -1,5 +1,5 @@
 /* Variables que utiliza Ccapture.js*/
-let gifLength = 120
+let frameLength = 120
 let canvas
 let running = false
 
@@ -111,9 +111,9 @@ function draw() {
   }
   /* Más codigo necesario para el funcionamiento de Ccapture.js*/
 
-  if(frameCount<gifLength){
+  if(frameCount<frameLength){
     capturer.capture(canvas)
-  }else if(frameCount === gifLength){
+  }else if(frameCount === frameLength){
     noLoop()
     capturer.stop()
     capturer.save()

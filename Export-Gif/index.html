@@ -6,22 +6,20 @@
 
     <title>Sketch</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
+    <script src="../libraries/p5.min.js"></script>
+    <script src="../libraries/p5.sound.min.js"></script>
 
     <!--Librerias para exportar en formato webm-->
-   <script src="libraries/CCapture.all.min.js"></script>
-   <script src="js/webm-writer-0.2.0.js"></script>
-   <script src="js/download.js"></script>
+   <script src="../libraries/CCapture.all.min.js"></script>
+   <script src="../js/gif.worker.js"></script>
+   <script src="../js/download.js"></script>
 
     <!-- seteamos todo sobre el formato, los frames y calidad del webm en el objeto capturer que luego usamos en  sketch.js-->
     <script>
     var capturer = new CCapture( {
         framerate: 60,
-        format:'webm',
-        workersPath: './js',
+        format:'gif',
+        workersPath: '../js/',
         quality: 100,
         verbose: true
       } );

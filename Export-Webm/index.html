@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+
+    <script src="../libraries/p5.min.js"></script>
+    <script src="../libraries/p5.sound.min.js"></script>
+
+    <!--Librerias para exportar en formato webm-->
+   <script src="../libraries/CCapture.all.min.js"></script>
+   <script src="../js/webm-writer-0.2.0.js"></script>
+   <script src="../download.js"></script>
+
+    <!-- seteamos todo sobre el formato, los frames y calidad del webm en el objeto capturer que luego usamos en  sketch.js-->
+    <script>
+    var capturer = new CCapture( {
+        framerate: 60,
+        format:'webm',
+        workersPath: '../js/',
+        quality: 100,
+        verbose: true
+      } );
+  
+
+    </script>
+
+  </head>
+
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
